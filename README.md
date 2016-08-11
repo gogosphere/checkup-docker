@@ -9,6 +9,9 @@ docker build .
 docker run -dit $(container that is created from the build)
 ```
 
+Given the above you can put it in a CI/CD pipeline and constantly create new checkers.
+
+
 Then you either copy out and host the statuspage directory somewhere permanent since you will be able to treat the container emphemerally.  You can use nginx or something dirt simple like a bash script the looks something like this:
 
 ```
